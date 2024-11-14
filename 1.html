@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .maindiv {
+        height: 100vh;
+        width: 100%;
+        background-color:black;
+        display: flex;
+    }
+
+    .div-1 {
+        height: 100vh;
+        width: 80%;
+    }
+
+    .div-2 {
+        height: 100vh;
+        width: 20%;
+        background-color:black;
+    }
+
+    .grid {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .item1 {
+        background-image: url(../module2/0e7a5552-461a-4674-a5fb-76aeecc1cff0.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .item2 {
+        background-image: url(https://cdn.unenvironment.org/s3fs-public/inline-images/1.jpg?VersionId=null);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .item3{
+        background-image: url(https://imgcdn.stablediffusionweb.com/2024/4/10/69a4dbc1-51b2-43e9-84a0-0693d2582dd3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .item4{
+        background-image: url(https://cdn.britannica.com/14/187114-050-EDE07B16/European-beech-trees-Oak-tree-Note-colors.jpg?w=840&h=460&c=crop);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: red;
+        grid-column: 2 /span 2;
+        grid-row: 2;
+        /* width: 800px; */
+    }
+    .item5{
+        background-image: url(https://t3.ftcdn.net/jpg/01/77/15/52/360_F_177155221_Vx4hTel9miJAQF5PugLEBuRt9aplmO68.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .item6{
+        background-image: url(https://www.shutterstock.com/image-photo/closeup-view-sexual-beautiful-female-260nw-1021158604.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 3;
+        grid-column: 1 /span 2;
+    }
+    .item7{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDLLfQL3g9ILk9LJJOy9DKKppAutPFrYYlA&s);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 3;
+        grid-column: 3 / span 2;
+    }
+    /* .item8{
+        background-image: url(https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?cs=srgb&dl=pexels-expect-best-79873-323705.jpg&fm=jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .item9{
+        width: 200px;
+        background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 2 ;
+        grid-row: 4;
+    }
+    .item10{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJDmVSnYj7b5bM76IctyXG-2GmtnBRCSD4g&s);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 3 ;
+        grid-row: 4;
+    } */
+    
+    .mainnav{
+        height: 100vh;
+        width: 100%;
+        text-align: right;
+        padding-right: 30px;
+        color: white;
+    }
+    .h3{
+        padding-top: 20px;
+    }
+    .nav li {
+        list-style-type: none;
+        padding-top: 20px;
+    }
+    .icon{
+        padding-top:20px ;
+        padding-left: 180px;
+        display: flex;
+        gap: 20px;
+    }
+.icon>.fa-brands{
+    color: yellow;
+    font-size: 20px;
+}
+</style>
+
+<body>
+
+    <div class="maindiv">
+        <div class="div-1">
+            <div class="grid">
+                <div class="item1">1</div>
+                <div class="item2">2</div>
+                <div class="item3">3</div>
+                <div class="item4">4</div>
+                <div class="item5">5</div>
+                <div class="item6">6</div>
+                <div class="item7">7</div>
+                <div class="item8">8</div>
+                <div class="item9">9</div>
+                <div class="item10">10</div>
+            </div>
+        </div>
+        <div class="div-2">
+            <div class="mainnav">
+                <div class="h3">
+                    <h3>SHUTTER</h3>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Bio</li>
+                        <li>Blog</li>
+                        <li>Content</li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <p><i class="fa-brands fa-facebook"></i></p>
+                    <p><i class="fa-brands fa-whatsapp"></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
